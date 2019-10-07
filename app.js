@@ -116,4 +116,3 @@ function startGame(self) {
   setBG('map.png', createGrid);
   toolBar();
 }
-
