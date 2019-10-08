@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
   <script src="./src/world.js"></script>
   <script src="./src/game.js"></script>
   <script src="./src/rect.js"></script>
-
+  <script src="./src/dragDrop.js"></script>
   <title>Boris Bikes</title>
 
 </head>
@@ -27,27 +28,6 @@
 <body>
   <audio id="backgroundmusic" autoplay="autoplay"><source src="./assets/queen.mp3" type="audio/mp3"></audio>
   <a href="./index.html"><img   src="./assets/home.png" class="gitcolor" class="gitzoom"></a>
-
-  <script>
-    var un_mute = document.getElementById('un-mute');
-    un_mute.onclick = function() {
-    alert('toggle mute here');};
-  </script>
-
-  <input type="checkbox" name="un-mute" id="un-mute">
-      <label for="un-mute" class="unmute">
-          <img
-          src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg"
-          alt="Mute_Icon.svg"
-          title="Mute icon"
-          onclick="document.getElementById('backgroundmusic').play()"
- >
-      </label>
-      <label for="un-mute" class="mute">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon"
-          onclick="document.getElementById('backgroundmusic').pause()"
-      </label>
-
   <canvas id="canvas-bg"></canvas>
   <canvas id="canvas"></canvas>
   <script src="app.js"></script>
